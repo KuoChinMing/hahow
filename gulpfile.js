@@ -29,7 +29,7 @@ function styles() {
     return gulp
     .src('sass/*.scss')
     .pipe(sourcemaps.init())
-        .pipe(sass({outputStyle: 'compressed'}))
+        .pipe(sass({outputStyle: 'expanded'}))
         .pipe(autoprefixer())
         .on('error', errorLog)
     .pipe(sourcemaps.write())
